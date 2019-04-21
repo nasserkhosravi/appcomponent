@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+	package
+		ADDED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:2:9-50
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+		ADDED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+	android:versionCode
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+		ADDED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml:1:1-2:52
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+		ADDED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+		ADDED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml
+		INJECTED from /Users/nasser/AndroidStudioProjects/appcomponent/library/src/main/AndroidManifest.xml

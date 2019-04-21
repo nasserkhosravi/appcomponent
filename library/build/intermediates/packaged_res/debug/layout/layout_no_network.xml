@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rootLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+>
+
+    <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgNo"
+            android:layout_width="@dimen/no_icons_size"
+            android:layout_height="@dimen/no_icons_size"
+            android:layout_centerInParent="true"
+            app:srcCompat="@drawable/ic_no_network"
+            app:tint="@color/primary_text"/>
+
+    <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/imgNo"
+            android:layout_marginTop="@dimen/standard_space"
+            android:gravity="center"
+            android:text="@string/No_internet_connection"
+            android:textAllCaps="true"
+            android:textColor="@color/secondary_text"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnTryAgain"
+            style="@style/btn_app_compat"
+            android:layout_alignParentBottom="true"
+            android:text="@string/Try_again"
+    />
+
+</RelativeLayout>

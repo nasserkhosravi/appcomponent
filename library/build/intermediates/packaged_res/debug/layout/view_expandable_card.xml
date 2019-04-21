@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="64dp"
+        android:paddingBottom="@dimen/half_space"
+        android:paddingLeft="@dimen/standard_space"
+        android:paddingRight="@dimen/standard_space"
+        android:paddingTop="@dimen/standard_space"
+>
+
+    <TextView
+            android:id="@+id/tv_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_card_expand"
+            android:layout_toStartOf="@id/iv_card_expand"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Title"/>
+
+    <ImageView
+            android:id="@+id/iv_card_expand"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical|end"
+            android:contentDescription="@null"
+            android:tint="@color/accent"
+            app:srcCompat="@drawable/ic_expand"/>
+
+    <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_card_title"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_card_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_space"
+                android:layout_marginTop="@dimen/standard_space"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                tools:text="Card Description"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
