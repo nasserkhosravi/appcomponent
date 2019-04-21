@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandableCardView">
+        <attr format="string" name="ecvTitle"/>
+        <attr format="boolean" name="ecvExpanded"/>
+        <attr format="integer" name="ecvExpand_duration"/>
+    </declare-styleable>
+</resources>

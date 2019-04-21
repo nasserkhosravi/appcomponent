@@ -1,0 +1,15 @@
+1-EventPublisher : you can make it better, let user decide how to publish exception,
+current problem is this class is coupled to EventBus. check Strategy design pattern
+
+2-FileUtils: code review needed
+
+3-ExpandableCardView: find a good way for getting estimate height of recycle view
+(you can't use expandable card view in recycle view, take notice in setHeightToContentHeight)
+
+4-ProgressBuilder:buildLinearProgressView : width is hardcoded
+
+5-NoConnectionView: create interface to creating no connection view
+
+6-ProgressBuilder: use inflate layout to construct progress view
+
+7- create ban view manager

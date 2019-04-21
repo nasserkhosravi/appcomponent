@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Library</string>
+
+    <string name="No_internet_connection">no internet connection</string>
+    <string name="No_server_connection">No server connection</string>
+    <string name="Problem_in_catching_data">Problem in catching data</string>
+    <string name="Try_again">Try again</string>
+    <string name="Un_expected_exception">Un expected exception</string>
+    <string name="linear_progress_text">Loading</string>
+</resources>

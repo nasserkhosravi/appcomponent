@@ -1,0 +1,9 @@
+for building and uploading new version to bintray
+0-create local.properties and set:
+
+bintray.user=user_name
+bintray.apikey=c1b65bf42a207fc77719385bcecaf65bb20de323
+
+1-up your version of gradle library (libraryVersion)
+2-./gradlew install
+3-./gradlew bintrayUpload

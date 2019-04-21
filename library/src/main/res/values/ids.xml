@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnTryAgain" type="id"/>
+    <item name="imgSlider" type="id"/>
+    <item name="itemClickSupport" type="id"/>
+    <item name="layoutBanView" type="id"/>
+    <item name="progressView" type="id"/>
+    <item name="rootView" type="id"/>
+    <item name="toolbarLayout" type="id"/>
+    <item name="tvTitleToolbar" type="id"/>
+
+</resources>

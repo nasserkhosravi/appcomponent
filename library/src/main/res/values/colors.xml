@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#FF5722</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="error_capable_snackbar_action_text_color">#FF5722</color>
+    <color name="error_capable_snackbar_background_color">@color/white</color>
+    <color name="error_capable_snackbar_text_color">@color/primary_text</color>
+    <color name="normal_capable_snackbar_action_text_color">#2261FF</color>
+    <color name="normal_capable_snackbar_background_color">@color/white</color>
+    <color name="normal_capable_snackbar_text_color">@color/primary_text</color>
+    <color name="primary">#8BC34A</color>
+    <color name="primary_dark">#689F38</color>
+    <color name="primary_light">#DCEDC8</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="toolbar_child_color">@color/primary_text</color>
+    <color name="toolbar_color">#fff</color>
+    <color name="white">#fff</color>
+
+</resources>
