@@ -14,11 +14,6 @@ import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
 import android.graphics.drawable.ShapeDrawable
 import android.os.Build
-import android.support.annotation.ColorRes
-import android.support.annotation.LayoutRes
-import android.support.design.widget.TabLayout
-import android.support.v4.content.ContextCompat
-import android.support.v4.view.ViewCompat
 import android.text.TextUtils
 import android.view.View
 import android.view.ViewGroup
@@ -29,6 +24,12 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.ColorInt
+import androidx.annotation.ColorRes
+import androidx.annotation.LayoutRes
+import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import com.google.android.material.tabs.TabLayout
 import com.nasserkhosravi.appcomponent.ResHelper
 import java.util.*
 
@@ -57,10 +58,14 @@ object UIUtils {
     }
 
     fun filterColor(drawable: Drawable, @ColorRes id: Int) {
+        filterColorInt(drawable,ResHelper.getColorRes(id))
+    }
+
+    fun filterColorInt(drawable: Drawable, @ColorInt color: Int) {
         when (drawable) {
-            is ShapeDrawable -> drawable.paint.color = ResHelper.getColorRes(id)
-            is GradientDrawable -> drawable.setColor(ResHelper.getColorRes(id))
-            is ColorDrawable -> drawable.color = ResHelper.getColorRes(id)
+            is ShapeDrawable -> drawable.paint.color = color
+            is GradientDrawable -> drawable.setColor(color)
+            is ColorDrawable -> drawable.color = color
         }
     }
 

@@ -9,9 +9,9 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.os.Parcel
 import android.os.Parcelable
-import android.support.annotation.DrawableRes
 import android.util.Log
 import android.widget.ImageView
+import androidx.annotation.DrawableRes
 import com.nasserkhosravi.appcomponent.AppContext
 import com.nasserkhosravi.appcomponent.Res
 import com.nasserkhosravi.appcomponent.ResType

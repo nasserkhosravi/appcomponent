@@ -4,21 +4,21 @@ import android.animation.PropertyValuesHolder
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.content.Context
-import android.support.annotation.IdRes
-import android.support.annotation.StringRes
-import android.support.v4.view.ViewCompat
-import android.support.v7.widget.CardView
-import android.support.v7.widget.RecyclerView
 import android.util.AttributeSet
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.IdRes
+import androidx.annotation.StringRes
+import androidx.cardview.widget.CardView
+import androidx.core.view.ViewCompat
+import androidx.recyclerview.widget.RecyclerView
 import com.nasserkhosravi.appcomponent.R
 
 /**
- * main source at https://github.com/TheLuckyCoder/Expandable-Card-View/blob/master/expandablecardview/src/main/java/net/theluckycoder/expandablecardview/ExpandableCardView.kt
  * A CardView that can be expanded
+ * source at https://github.com/TheLuckyCoder/Expandable-Card-View/blob/master/expandablecardview/src/main/java/net/theluckycoder/expandablecardview/ExpandableCardView.kt
  **/
 open class ExpandableCardView : CardView {
     fun tag() = "ExpandableCardView"

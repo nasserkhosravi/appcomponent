@@ -1,11 +1,11 @@
 package com.nasserkhosravi.appcomponent.view.adapter
 
 import android.content.Context
-import android.support.annotation.LayoutRes
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.LayoutRes
+import androidx.recyclerview.widget.RecyclerView
 import com.nasserkhosravi.appcomponent.R
 import com.nasserkhosravi.appcomponent.ResourceComponent
 import com.nasserkhosravi.appcomponent.utils.JReflectionUtils
@@ -22,11 +22,11 @@ abstract class BaseComponentAdapter<M> : RecyclerView.Adapter<RecyclerView.ViewH
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         checkCacheContext(parent)
-        return getViewHolder(inflateLayout(getLayoutRes(), parent), viewType)
+        return getViewHolder(inflateLayout(layoutRes, parent), viewType)
     }
 
     abstract fun getViewHolder(view: View, viewType: Int): RecyclerView.ViewHolder
-    abstract fun getLayoutRes(): Int
+    abstract val layoutRes: Int
 
     fun checkCacheContext(viewGroup: ViewGroup) {
         if (this.context == null) {
@@ -45,6 +45,7 @@ abstract class BaseComponentAdapter<M> : RecyclerView.Adapter<RecyclerView.ViewH
         return items!!.size
     }
 
+    //todo: why you create LayoutInflater every time
     fun inflateLayout(@LayoutRes layoutId: Int, container: ViewGroup): View {
         return LayoutInflater.from(this.context).inflate(layoutId, container, false)
     }

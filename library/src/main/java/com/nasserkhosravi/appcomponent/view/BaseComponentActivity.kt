@@ -1,7 +1,7 @@
 package com.nasserkhosravi.appcomponent.view
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.nasserkhosravi.appcomponent.AppComponent
 import com.nasserkhosravi.appcomponent.BaseViewAccessor
 import com.nasserkhosravi.appcomponent.BaseViewGroupManager

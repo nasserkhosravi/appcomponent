@@ -2,15 +2,15 @@ package com.nasserkhosravi.appcomponent.view
 
 import android.annotation.SuppressLint
 import android.os.Handler
-import android.support.annotation.ColorRes
-import android.support.annotation.IntDef
-import android.support.annotation.StringRes
-import android.support.design.widget.BaseTransientBottomBar
-import android.support.v4.view.ViewCompat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.annotation.ColorRes
+import androidx.annotation.IntDef
+import androidx.annotation.StringRes
+import androidx.core.view.ViewCompat
+import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.nasserkhosravi.appcomponent.R
 import com.nasserkhosravi.appcomponent.ResHelper
 
@@ -29,6 +29,7 @@ class CapableSnackBar(parent: ViewGroup, content: View, callback: CapableContent
         const val LONG_DURATION_MS = 2750
         const val LENGTH_INDEFINITE_MS = 100000
 
+        @SuppressLint("WrongConstant")
         fun make(coordinateLayout: ViewGroup): CapableSnackBar {
             val inflater = LayoutInflater.from(coordinateLayout.context)
             val content = inflater.inflate(R.layout.layout_capable_snack_bar, coordinateLayout, false)

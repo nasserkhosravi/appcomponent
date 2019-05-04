@@ -1,6 +1,6 @@
 package com.nasserkhosravi.appcomponent.data
 
-import android.support.annotation.RawRes
+import androidx.annotation.RawRes
 import com.nasserkhosravi.appcomponent.AppContext
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient

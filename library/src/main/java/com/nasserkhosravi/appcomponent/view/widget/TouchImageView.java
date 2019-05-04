@@ -1,5 +1,6 @@
 package com.nasserkhosravi.appcomponent.view.widget;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Configuration;
@@ -17,13 +18,17 @@ import android.view.MotionEvent;
 import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
+import android.widget.ImageView;
 import android.widget.OverScroller;
 import android.widget.Scroller;
 
 /**
  * ImageView with zoom
+ * This call loads pixel based image so tinting of image view is useless.
+ * so feel free to use @SuppressLint("AppCompatCustomView")
  */
-public class TouchImageView extends android.support.v7.widget.AppCompatImageView {
+@SuppressLint("AppCompatCustomView")
+public class TouchImageView extends ImageView {
 
     private static final String DEBUG = "DEBUG";
 

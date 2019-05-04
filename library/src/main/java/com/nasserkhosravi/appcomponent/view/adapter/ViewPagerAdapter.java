@@ -1,12 +1,17 @@
 package com.nasserkhosravi.appcomponent.view.adapter;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * ViewPagerAdapter for make pair of fragment and title.
+ * designed to use in tab layout and a view pager.
+ */
 public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     private final List<Fragment> mFragmentList = new ArrayList<>();

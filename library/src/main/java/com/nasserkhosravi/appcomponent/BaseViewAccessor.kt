@@ -2,13 +2,13 @@ package com.nasserkhosravi.appcomponent
 
 import android.app.Activity
 import android.graphics.PorterDuff
-import android.support.annotation.LayoutRes
-import android.support.annotation.StringRes
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.annotation.LayoutRes
+import androidx.annotation.StringRes
 
 import com.nasserkhosravi.appcomponent.utils.DimensUtils
 import com.nasserkhosravi.appcomponent.view.NoConnectionView

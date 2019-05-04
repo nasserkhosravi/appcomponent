@@ -1,7 +1,7 @@
 package com.nasserkhosravi.appcomponent.error
 
-import android.support.annotation.IntDef
-import android.support.annotation.StringRes
+import androidx.annotation.IntDef
+import androidx.annotation.StringRes
 
 class NetworkErrorModel constructor(val errorId: Int, @Type val errorType: Int, @StringRes var stringRes: Int) {
 

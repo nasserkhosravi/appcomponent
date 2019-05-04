@@ -1,11 +1,11 @@
 package com.nasserkhosravi.appcomponent.view.fragment
 
 import android.os.Bundle
-import android.support.annotation.LayoutRes
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.annotation.LayoutRes
+import androidx.fragment.app.Fragment
 import com.nasserkhosravi.appcomponent.AppComponent
 import com.nasserkhosravi.appcomponent.BaseViewAccessor
 import com.nasserkhosravi.appcomponent.BaseViewGroupManager
@@ -16,8 +16,8 @@ abstract class BaseComponentFragment : Fragment() {
 
     private lateinit var appDelegate: AppComponent
 
-    @LayoutRes
-    protected abstract fun layoutRes(): Int
+    @get:LayoutRes
+    abstract val layoutRes : Int
 
     fun getBaseActivity(): BaseComponentActivity = activity as BaseComponentActivity
 
@@ -28,8 +28,8 @@ abstract class BaseComponentFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        if (layoutRes() != 0) {
-            return inflater.inflate(layoutRes(), container, false)
+        if (layoutRes != 0) {
+            return inflater.inflate(layoutRes, container, false)
         }
         return super.onCreateView(inflater, container, savedInstanceState)
     }

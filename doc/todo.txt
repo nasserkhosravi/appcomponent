@@ -13,3 +13,5 @@ current problem is this class is coupled to EventBus. check Strategy design patt
 6-ProgressBuilder: use inflate layout to construct progress view
 
 7- create ban view manager
+
+8- ImageResource give user to choose the library implementation of loading image
